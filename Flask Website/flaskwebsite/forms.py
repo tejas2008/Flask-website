@@ -10,3 +10,4 @@ class ReviewForm(FlaskForm):
                         validators=[DataRequired(), Email()])
     your_idea=StringField('Share your idea', validators=[DataRequired()])
     submit = SubmitField('Submit')
+    #forms

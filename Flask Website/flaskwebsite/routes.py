@@ -17,3 +17,4 @@ def faqpage():
 @app.route('/reviews')
 def reviewpage():
     return render_template("reviews.html")
+    #routes
