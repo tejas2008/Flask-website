@@ -1,7 +1,5 @@
 from flask import Flask render_template, url_for, flash, redirect, request, abort
 from flaskwebsite import app, db
-from flaskwebsite.forms import PostForm
-from flaskwebsite import app, db, bcrypt
 from flaskwebsite.forms import ReviewForm
 from flaskwebsite.models import Post
 app = Flask(__name__)
@@ -20,11 +18,10 @@ def moviepage2():
 @app.route('/faq')
 def faqpage():
     return render_template("faq.html")
-
-
 @app.route('/reviews')
 def reviewpage():
-    return render_template("reviews.html")
+    form=ReviewForm()
+    return render_template("reviews.html",form=form)
 
 if __name__ == '__main__':
     app.run(debug=True)
