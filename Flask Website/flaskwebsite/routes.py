@@ -1,9 +1,6 @@
 from flask import render_template, url_for, flash, redirect, request, abort
 from flaskwebsite import app, db
-<<<<<<< HEAD
 from flaskwebsite.forms import ReviewForm
-=======
->>>>>>> 632c4eab63ff304961942d4f2b0680a0b0dc41ac
 from flaskwebsite.models import Post
 @app.route('/')
 def homepage():
