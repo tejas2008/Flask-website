@@ -21,7 +21,4 @@ def faqpage():
 @app.route('/reviews')
 def reviewpage():
     return render_template("reviews.html")
-<<<<<<< HEAD
-    #routes
-=======
->>>>>>> c13361a108a6271abac0f0982c2b86973c24ce62
+
